@@ -1,0 +1,64 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/cypress/videos
+/cypress/screenshots
+
+# next.js
+/.next/
+/out/
+/.next-*
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+.env.development
+.env.production
+.env.test
+
+# docker
+.docker
+docker-compose.override.yml
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# logs
+logs
+*.log
+
+# development files
+todo.txt
+notes.txt
+
+# cache
+.eslintcache
+.stylelintcache
+.cache 

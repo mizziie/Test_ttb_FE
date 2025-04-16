@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  survey-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: survey-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://host.docker.internal:8080
+    networks:
+      - survey-network
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  survey-network:
+    external: true
+
